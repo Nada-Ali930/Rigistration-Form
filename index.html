@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Titillium Web font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <!---->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min copy.css">
+   <link rel="stylesheet" href="style.css">
+    <title>DOM Task</title>
+</head>
+<body>
+   <div class="system text-center m-auto mt-5 d-block">
+    <div class="container">
+        <h1 class="pb-3">Smart Login System</h1>
+        <form>
+            <div class="login d-block">
+                 <div class="mb-3">
+                    <input type="email" class="form-control " id="email2" placeholder="Enter Your Email" >
+                  </div>
+                <div class="mb-5">
+                    <input type="password" class="form-control" id="password2" placeholder="Enter Your Password">
+                  </div>
+                  <p class="not-right d-none text-danger">All inputs is required</p>
+                  <p class="login-defult d-none text-danger">incorrect email or password</p>
+                  <button type="submit" class="form-control btn btn-outline-info mb-3" onclick="validLogin()">Login</button>
+                  <p class="fs-6 para">Don't have an account? <a href='#'id="loginLink">Sign Up</a></p>
+            </div>
+            <div class="sign d-none">
+                <div class="mb-3">
+                    <input type="text" class="form-control " id="name" placeholder="Enter Your Name">
+                  </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control " id="email" placeholder="Enter Your Email" >
+                  </div>
+                <div class="mb-5">
+                    <input type="password" class="form-control" id="password" placeholder="Enter Your Password" >
+                  </div>
+                  <p class="error d-none text-danger">All inputs is required</p>
+                  <p class="success d-none text-success ">success</p>
+                  <p class="email-validation d-none text-danger">email already exists</p>
+                  <button type="submit" class="form-control btn btn-outline-info mb-3 "onclick="vaildation()">Sign Up</button>
+                  <p class="fs-6 para">You have an account? <a href="#" id="signLink"> Signin</a></p>
+            </div>
+
+        </form>
+    </div>
+   </div>
+   <div class="Welcome position-relative d-none">
+    <nav class="navbar shadow-lg">
+        <div class="container-fluid d-flex justify-content-around">
+          <span class="navbar-brand mb-0 h1 text-white">SMART LOGIN
+        </span>
+        <button class="btn btn-outline-warning"onclick="LogOut()">Logout</button>
+        </div>
+      </nav>
+      <div class="welcome-box position-absolute ">
+        <h2 class="h1">Welcome <span class="welcome-name"></span></h2>
+      </div>
+    </div> 
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="mean.js"></script>
+</body>
+</html>

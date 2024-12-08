@@ -1,0 +1,55 @@
+body{
+    background-color: #24353F;
+    font-family:"Titillium Web", sans-serif;;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: #17A2B8;
+
+}
+.system{
+    width: 50%;
+    height: 50%;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2), 7px 7px 7px 7px rgba(0, 0, 0, 0.19);
+    padding: 30px;
+}
+button{
+    background-color: #24353F;
+    color:#17A2B8;
+
+}
+#email,#password,#name,#email2,#password2{
+    background-color: #24353F !important;
+    color: white;
+}
+/* ::placeholder{
+    color: white;
+    opacity: 1;
+} */
+.btn-outline-info{
+    --bs-btn-hover-color: white !important;
+}
+.para{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration:underline white;
+}
+.btn-outline-warning{
+    
+    --bs-btn-color:grey;
+    --bs-btn-hover-color:white;
+}
+.welcome-box{
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px 200px;
+    color:#17A2B8;
+    box-shadow: 7px 7px 7px 7px rgba(0, 0, 0, 0.2), 7px 7px 7px 7px rgba(0, 0, 0, 0.19);
+}
